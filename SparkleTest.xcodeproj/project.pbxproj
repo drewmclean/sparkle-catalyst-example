@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4919C9552C79219D000E2814 /* AppUpdater+SparkleFeedParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4919C9542C79219D000E2814 /* AppUpdater+SparkleFeedParser.swift */; };
+		4919C9572C7921D4000E2814 /* Sparkle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4919C9562C7921D4000E2814 /* Sparkle+Extensions.swift */; };
+		493CDEF42C001C9300FE3A0A /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDEF32C001C9300FE3A0A /* Plugin.swift */; };
+		493CDEF52C001C9300FE3A0A /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDEF32C001C9300FE3A0A /* Plugin.swift */; };
+		493CDEF72C001DAF00FE3A0A /* AppKitPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493CDEF62C001DAF00FE3A0A /* AppKitPlugin.swift */; };
+		493CDEFA2C0027D400FE3A0A /* AppKitPlugin.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 493CDEE82C001B4900FE3A0A /* AppKitPlugin.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		496816A32C78EC26001F7E59 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 496816A22C78EC26001F7E59 /* Sparkle */; };
+		497C35A32BFF998B007CCC34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C35A22BFF998B007CCC34 /* AppDelegate.swift */; };
+		497C35A52BFF998B007CCC34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C35A42BFF998B007CCC34 /* SceneDelegate.swift */; };
+		497C35A72BFF998B007CCC34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497C35A62BFF998B007CCC34 /* ViewController.swift */; };
+		497C35AA2BFF998B007CCC34 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 497C35A92BFF998B007CCC34 /* Base */; };
+		497C35AC2BFF998C007CCC34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497C35AB2BFF998C007CCC34 /* Assets.xcassets */; };
+		497C35AF2BFF998C007CCC34 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 497C35AE2BFF998C007CCC34 /* Base */; };
+		49A87A552C774D4D0031270E /* AppUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A87A542C774D4D0031270E /* AppUpdater.swift */; };
+		49A87A572C774ED80031270E /* AppUpdateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A87A562C774ED80031270E /* AppUpdateObserver.swift */; };
+		49A87A582C775BC70031270E /* AppUpdateObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A87A562C774ED80031270E /* AppUpdateObserver.swift */; };
+		49BB881B2C78E299007F7595 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 49BB881A2C78E299007F7595 /* Sparkle */; };
+		49C048362C680E55007470DB /* ci_scripts in Resources */ = {isa = PBXBuildFile; fileRef = 49C048352C680E55007470DB /* ci_scripts */; };
+		49C66BF62C6A782E00E08A26 /* ReleaseNotes in Resources */ = {isa = PBXBuildFile; fileRef = 49C66BF52C6A782E00E08A26 /* ReleaseNotes */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		493CDEEE2C001B6A00FE3A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 497C35972BFF998B007CCC34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493CDEE72C001B4900FE3A0A;
+			remoteInfo = AppKitPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		493CDEF02C001B6A00FE3A0A /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				493CDEFA2C0027D400FE3A0A /* AppKitPlugin.bundle in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4919C9542C79219D000E2814 /* AppUpdater+SparkleFeedParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppUpdater+SparkleFeedParser.swift"; sourceTree = "<group>"; };
+		4919C9562C7921D4000E2814 /* Sparkle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sparkle+Extensions.swift"; sourceTree = "<group>"; };
+		493CDEE82C001B4900FE3A0A /* AppKitPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppKitPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		493CDEF22C001C9300FE3A0A /* AppKitPlugin-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppKitPlugin-Bridging-Header.h"; sourceTree = "<group>"; };
+		493CDEF32C001C9300FE3A0A /* Plugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plugin.swift; sourceTree = "<group>"; };
+		493CDEF62C001DAF00FE3A0A /* AppKitPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppKitPlugin.swift; sourceTree = "<group>"; };
+		497C359F2BFF998B007CCC34 /* SparkleTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkleTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		497C35A22BFF998B007CCC34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		497C35A42BFF998B007CCC34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		497C35A62BFF998B007CCC34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		497C35A92BFF998B007CCC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		497C35AB2BFF998C007CCC34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		497C35AE2BFF998C007CCC34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		497C35B02BFF998C007CCC34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497C35B62BFF99C1007CCC34 /* SparkleTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SparkleTest.entitlements; sourceTree = "<group>"; };
+		49A87A542C774D4D0031270E /* AppUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdater.swift; sourceTree = "<group>"; };
+		49A87A562C774ED80031270E /* AppUpdateObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateObserver.swift; sourceTree = "<group>"; };
+		49C048352C680E55007470DB /* ci_scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ci_scripts; sourceTree = "<group>"; };
+		49C66BF52C6A782E00E08A26 /* ReleaseNotes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ReleaseNotes; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		493CDEE52C001B4900FE3A0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BB881B2C78E299007F7595 /* Sparkle in Frameworks */,
+				496816A32C78EC26001F7E59 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497C359C2BFF998B007CCC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		493CDEEC2C001B6A00FE3A0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493CDEF12C001C1200FE3A0A /* AppKitPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				493CDEF32C001C9300FE3A0A /* Plugin.swift */,
+				493CDEF22C001C9300FE3A0A /* AppKitPlugin-Bridging-Header.h */,
+				493CDEF62C001DAF00FE3A0A /* AppKitPlugin.swift */,
+				49A87A542C774D4D0031270E /* AppUpdater.swift */,
+				49A87A562C774ED80031270E /* AppUpdateObserver.swift */,
+				4919C9542C79219D000E2814 /* AppUpdater+SparkleFeedParser.swift */,
+				4919C9562C7921D4000E2814 /* Sparkle+Extensions.swift */,
+			);
+			path = AppKitPlugin;
+			sourceTree = "<group>";
+		};
+		497C35962BFF998B007CCC34 = {
+			isa = PBXGroup;
+			children = (
+				49C66BF52C6A782E00E08A26 /* ReleaseNotes */,
+				49C048352C680E55007470DB /* ci_scripts */,
+				497C35A12BFF998B007CCC34 /* SparkleTest */,
+				493CDEF12C001C1200FE3A0A /* AppKitPlugin */,
+				497C35A02BFF998B007CCC34 /* Products */,
+				493CDEEC2C001B6A00FE3A0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		497C35A02BFF998B007CCC34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				497C359F2BFF998B007CCC34 /* SparkleTest.app */,
+				493CDEE82C001B4900FE3A0A /* AppKitPlugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497C35A12BFF998B007CCC34 /* SparkleTest */ = {
+			isa = PBXGroup;
+			children = (
+				497C35B62BFF99C1007CCC34 /* SparkleTest.entitlements */,
+				497C35A22BFF998B007CCC34 /* AppDelegate.swift */,
+				497C35A42BFF998B007CCC34 /* SceneDelegate.swift */,
+				497C35A62BFF998B007CCC34 /* ViewController.swift */,
+				497C35A82BFF998B007CCC34 /* Main.storyboard */,
+				497C35AB2BFF998C007CCC34 /* Assets.xcassets */,
+				497C35AD2BFF998C007CCC34 /* LaunchScreen.storyboard */,
+				497C35B02BFF998C007CCC34 /* Info.plist */,
+			);
+			path = SparkleTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		493CDEE72C001B4900FE3A0A /* AppKitPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 493CDEEB2C001B4900FE3A0A /* Build configuration list for PBXNativeTarget "AppKitPlugin" */;
+			buildPhases = (
+				493CDEE42C001B4900FE3A0A /* Sources */,
+				493CDEE52C001B4900FE3A0A /* Frameworks */,
+				493CDEE62C001B4900FE3A0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppKitPlugin;
+			packageProductDependencies = (
+				49BB881A2C78E299007F7595 /* Sparkle */,
+				496816A22C78EC26001F7E59 /* Sparkle */,
+			);
+			productName = AppKitPlugin;
+			productReference = 493CDEE82C001B4900FE3A0A /* AppKitPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		497C359E2BFF998B007CCC34 /* SparkleTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497C35B32BFF998C007CCC34 /* Build configuration list for PBXNativeTarget "SparkleTest" */;
+			buildPhases = (
+				497C359B2BFF998B007CCC34 /* Sources */,
+				497C359C2BFF998B007CCC34 /* Frameworks */,
+				497C359D2BFF998B007CCC34 /* Resources */,
+				493CDEF02C001B6A00FE3A0A /* Embed PlugIns */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				493CDEEF2C001B6A00FE3A0A /* PBXTargetDependency */,
+			);
+			name = SparkleTest;
+			productName = SparkleTest;
+			productReference = 497C359F2BFF998B007CCC34 /* SparkleTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		497C35972BFF998B007CCC34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					493CDEE72C001B4900FE3A0A = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
+					497C359E2BFF998B007CCC34 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 497C359A2BFF998B007CCC34 /* Build configuration list for PBXProject "SparkleTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 497C35962BFF998B007CCC34;
+			packageReferences = (
+				496816A12C78EC26001F7E59 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = 497C35A02BFF998B007CCC34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				497C359E2BFF998B007CCC34 /* SparkleTest */,
+				493CDEE72C001B4900FE3A0A /* AppKitPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		493CDEE62C001B4900FE3A0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497C359D2BFF998B007CCC34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49C66BF62C6A782E00E08A26 /* ReleaseNotes in Resources */,
+				497C35AC2BFF998C007CCC34 /* Assets.xcassets in Resources */,
+				497C35AF2BFF998C007CCC34 /* Base in Resources */,
+				497C35AA2BFF998B007CCC34 /* Base in Resources */,
+				49C048362C680E55007470DB /* ci_scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		493CDEE42C001B4900FE3A0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4919C9572C7921D4000E2814 /* Sparkle+Extensions.swift in Sources */,
+				4919C9552C79219D000E2814 /* AppUpdater+SparkleFeedParser.swift in Sources */,
+				493CDEF72C001DAF00FE3A0A /* AppKitPlugin.swift in Sources */,
+				493CDEF52C001C9300FE3A0A /* Plugin.swift in Sources */,
+				49A87A572C774ED80031270E /* AppUpdateObserver.swift in Sources */,
+				49A87A552C774D4D0031270E /* AppUpdater.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		497C359B2BFF998B007CCC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A87A582C775BC70031270E /* AppUpdateObserver.swift in Sources */,
+				497C35A72BFF998B007CCC34 /* ViewController.swift in Sources */,
+				497C35A32BFF998B007CCC34 /* AppDelegate.swift in Sources */,
+				493CDEF42C001C9300FE3A0A /* Plugin.swift in Sources */,
+				497C35A52BFF998B007CCC34 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		493CDEEF2C001B6A00FE3A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493CDEE72C001B4900FE3A0A /* AppKitPlugin */;
+			targetProxy = 493CDEEE2C001B6A00FE3A0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		497C35A82BFF998B007CCC34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497C35A92BFF998B007CCC34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		497C35AD2BFF998C007CCC34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497C35AE2BFF998C007CCC34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		493CDEE92C001B4900FE3A0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WNVLT95ZEN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmclean.SparkleTestAppKitPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKitPlugin/AppKitPlugin-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		493CDEEA2C001B4900FE3A0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WNVLT95ZEN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmclean.SparkleTestAppKitPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AppKitPlugin/AppKitPlugin-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		497C35B12BFF998C007CCC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		497C35B22BFF998C007CCC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		497C35B42BFF998C007CCC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SparkleTest/SparkleTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = NO;
+				DEVELOPMENT_TEAM = WNVLT95ZEN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkleTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SparkleTest;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmclean.SparkleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		497C35B52BFF998C007CCC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SparkleTest/SparkleTest.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEPLOYMENT_LOCATION = NO;
+				DEVELOPMENT_TEAM = WNVLT95ZEN;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				EXCLUDED_ARCHS = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SparkleTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SparkleTest;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.graphics-design";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.4.0;
+				OTHER_CODE_SIGN_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewmclean.SparkleTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		493CDEEB2C001B4900FE3A0A /* Build configuration list for PBXNativeTarget "AppKitPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				493CDEE92C001B4900FE3A0A /* Debug */,
+				493CDEEA2C001B4900FE3A0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497C359A2BFF998B007CCC34 /* Build configuration list for PBXProject "SparkleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497C35B12BFF998C007CCC34 /* Debug */,
+				497C35B22BFF998C007CCC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497C35B32BFF998C007CCC34 /* Build configuration list for PBXNativeTarget "SparkleTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497C35B42BFF998C007CCC34 /* Debug */,
+				497C35B52BFF998C007CCC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		496816A12C78EC26001F7E59 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		496816A22C78EC26001F7E59 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 496816A12C78EC26001F7E59 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		49BB881A2C78E299007F7595 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 497C35972BFF998B007CCC34 /* Project object */;
+}

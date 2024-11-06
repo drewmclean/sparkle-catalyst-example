@@ -1,0 +1,2 @@
+SparkleTest - Version 1.3.0:
+  - Deployed from XCode Cloud
